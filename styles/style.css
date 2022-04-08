@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    background-color: black;
+    background-image: url(../images/parede.jpeg); 
+    background-repeat: no-repeat;
+}
+header{
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 30px #139424;
+    letter-spacing: 10px;
+}
+#wallet{
+    align-content:center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+
+}
+#cupom{
+    font-size: 150px;
+    color: white;
+}
+#all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-content:center;
+}
+
+.machine{
+    border: 10px solid white;
+    border-top: 30px solid white;
+    border-bottom: 30px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px #fff;
+    height: 800px;
+    margin: auto;
+    padding-top: 50px 0;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.screen{ /* BOX painel principal*/
+    padding: 15px auto;
+    border: 10px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px #139424;
+    height: 300px;
+    margin: auto;
+    padding-top: 50px 0;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+#contentOne{ /* Config box icone 1*/
+    border: 5px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px white;
+    height: 250px;
+    margin: auto;
+    padding-top: 50px 0;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    
+}
+.one{ /*Conteudo box 1*/
+    transition:all 0.8s ease;
+    max-width: 250;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    text-shadow: 0px 0px 30px white;
+    line-height: 0.8;
+    background-color: #fff;
+   
+}
+#contentTwo{ /* Config box icone 2*/
+    border: 5px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px white;
+    height: 250px;
+    margin: auto;
+    padding-top: 50px 0;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.two{ /*Conteudo box 2*/
+    transition:all 0.8s ease;
+    max-width: 250;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    text-shadow: 0px 0px 30px white;
+    line-height: 0.8;
+    background-color: #fff;
+    
+}
+#contentThree{ /* Config box icone 3*/
+    border: 5px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px white;
+    height: 250px;
+    margin: auto;
+    padding-top: 50px 0;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.three{ /*Conteudo box 3*/
+    transition:all 0.8s ease;
+    max-width: 250;
+    font-size: 150px;
+    position: relative;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    text-shadow: 0px 0px 30px white;
+    line-height: 0.8;
+    background-color: #fff;
+    
+}
+.money{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    gap: 40px;
+}
+
+#line{
+    position: relative;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px white;
+    height: 0px;
+    width: 950px;
+    display: flex;
+    margin: auto;
+}
+
+.moneyBox{ /* Box do Dinheiro*/
+    display: flex;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px white;
+    height: 70px;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+.din{
+    display: flex;
+    font-size: 100px;
+    color: rgb(211, 179, 1);
+    text-shadow: 0px 0px 30px yellow;
+    letter-spacing: 18px;
+}
+
+.betMoney{
+    margin-top: 5px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items:baseline;
+    align-content: center;
+}
+.clickButtons{
+    position: relative;
+    margin-top: 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: space-around;
+    width: 900px;
+    height: auto;
+}
+#coins{ /* box das moedas*/
+    padding: 0px;
+    display: flex;
+    width: 280px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content:center;
+    margin: auto;
+}
+.btn.money{ /* Config moedas*/
+    font-size: 50px;
+    justify-content:center;
+    text-align: center;
+    align-items:baseline;
+    align-content: center;
+    color: rgb(211, 179, 1);
+    box-shadow: 0px 0px 30px yellow;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+#takeMoney{
+    font-size: 30px;
+    border-radius: 20%;
+    height: 200px;
+    width: 150px;
+    bottom: 50px; 
+}
+
+.buttons{ /* area dos botoes*/
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+.btn:hover{ /* Config dos bontoes*/
+    box-shadow: 0px 0px 30px #d69d00;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+#btnRight{ /* Config do botao direito*/
+    font-size: 50px;
+    left: 10px;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
+    bottom: 50px;
+    letter-spacing: 10px;
+    color: teal;
+    cursor: pointer;
+}
+
+/* layout dos icones aleatorios*/
+.icon.blue{
+    color:blue;
+    text-shadow: 0px 0px 30px blue;
+}
+.icon.red{
+    color:red;
+    text-shadow: 0px 0px 30px red;
+}
+.icon.green{
+    color: green;
+    text-shadow: 0px 0px 30px green;
+}
+

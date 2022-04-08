@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="../slotMachine/styles/style.css" />
+  </head>
+  <body>
+      <header>
+          <h1>Welcome to Slot Machine</h1>
+      </header>
+
+    <div id = "wallet">
+        <span id = "cupom" class = "yours">$10</span>
+    </div> 
+    <div id = "all">
+
+      <div class= "machine">
+            <section class= "screen">
+                <div id="contentOne" class= "one">
+                    <span id="columOne" class = 'icon color'>?</span>
+                </div>
+                <div id="contentTwo" class= "two">
+                    <span id="columTwo" class = 'icon color'>?</span>
+                </div>
+                <div id="contentThree" class= "three">
+                  <span id="columThree" class = 'icon color'>?</span>
+                </div>
+            </section>
+
+            <section class= "money">
+                <span id = "line"></span>
+                <span class= "din">$$$$</span>
+                <span class = "moneyBox">
+                    <span id = "bet" class= "betMoney"></span> 
+                </span>
+                <span class= "din">$$$$</span>
+            </section>
+            <section class = "clickButtons">
+                <span id = "coins">
+                    <button id = 'btn10' class = 'btn money'>10¢</button>
+                    <button id = 'btn25' class = 'btn money'>25¢</button>
+                    <button id = 'btn50' class = 'btn money'>50¢</button>
+                    <button id = 'btnDollar' class = 'btn money'>$1</button>
+                </span>
+                <span class = 'buttons'>
+                    <button id = 'takeMoney' class = 'btn money'>take <br>money</button>
+                    <button id = 'btnRight' class = 'btn start'>SPIN</button>
+                   
+                </span>
+            </section>
+    </div>
+
+            </div>
+
+      <script src="../slotMachine/javascripts/slotmachine.js"></script>
+      <script src="../slotMachine/javascripts/index.js"></script>
+  </body>
+</html>
