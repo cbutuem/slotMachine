@@ -1,6 +1,7 @@
 const slotmachine = new Slotmachine;
 
 const btnRightElement = document.getElementById('btnRight');
+const popUP = document.getElementById('myPopup');
 
 const firstColum = document.getElementById('columOne');
 const secondColum = document.getElementById('columTwo');
@@ -36,6 +37,7 @@ let winMoney = (cash, icons) => {
     yourMoney.innerHTML = total.toFixed(2);
     betMoney.innerHTML = 0;
     slotmachine.myMoney(total);
+    winLose(a);
     return total
 }
 
@@ -131,7 +133,7 @@ function play(){
     icons = slotmachine.game();
     winMoney(din, icons);
     color(icons);
-    btnRightElement.innerText = 'NEW GAME'; 
+    btnRightElement.innerText = 'NEW GAME';
 }
 function cleanIcons(){
     firstColum.classList.remove("blue", "green", "red");
@@ -177,16 +179,52 @@ function generateRandomColor() {
   
 btnRightElement.addEventListener('click', () => {
     if (btnRightElement.innerText === 'SPIN' && din > 0){
-        setTimeout(play, 3000);
+        setTimeout(play, 2000);
         setInterval(changeColor, 200);
-       
     }
     else{
         din = 0;
         newGame();
-       
     }
+    winLose('din');
 });
+
+function winLose(a){
+    if (a === 0){
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = "LOSER"); // "foo" é o id do elemento que seja manipular.
+        }, 1000);
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = ""); // "foo" é o id do elemento que seja manipular.
+        }, 3000);
+    }
+    if (a > 0){
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = `You WIN! X ${a}`); // "foo" é o id do elemento que seja manipular.
+        }, 1000);
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = ""); // "foo" é o id do elemento que seja manipular.
+        }, 3000);
+    }
+    if ('din'){
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = "B**** better have my money!"); // "foo" é o id do elemento que seja manipular.
+        }, 1000);
+        setTimeout(function () {
+            $('pop').hide(popUP.innerHTML = ""); // "foo" é o id do elemento que seja manipular.
+        }, 3000);
+    }
+};
+
+$().ready( function() {
+	setTimeout(function () {
+		$('pop').hide(popUP.innerHTML = "You won a $10 coupon!"); 
+	}, 1000);
+    setTimeout(function () {
+		$('pop').hide(popUP.innerHTML = "You won a $10 coupon!"); 
+	}, 3000);
+});
+
 
 plus10.addEventListener('click', () =>{
     if (btnRightElement.innerText === 'SPIN'){

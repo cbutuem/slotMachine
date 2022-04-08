@@ -81,7 +81,7 @@ header{
 .one{ /*Conteudo box 1*/
     transition:all 0.8s ease;
     max-width: 250;
-    font-size: 150px;
+    font-size: 100px;
     position: relative;
     text-align: center;
     display:flex;
@@ -107,7 +107,7 @@ header{
 .two{ /*Conteudo box 2*/
     transition:all 0.8s ease;
     max-width: 250;
-    font-size: 150px;
+    font-size: 100px;
     position: relative;
     text-align: center;
     display:flex;
@@ -133,7 +133,7 @@ header{
 .three{ /*Conteudo box 3*/
     transition:all 0.8s ease;
     max-width: 250;
-    font-size: 150px;
+    font-size: 100px;
     position: relative;
     text-align: center;
     display:flex;
@@ -271,3 +271,51 @@ header{
     text-shadow: 0px 0px 30px green;
 }
 
+/* POPUP */
+
+.popup {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
+    max-width: 400px;
+    max-height: 500px;
+  }
+
+.popup .popuptext {
+/*    visibility: hidden;*/
+    font-size: 70px;
+    background-color: rgba(60, 202, 95, 0.596);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  /*.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }*/
