@@ -33,7 +33,7 @@ Value sequences:
 - 4 To play again, click 'NEW GAME'
 - 5 That's it GOOD LUCK!
 # 
-- Jogo -> https://cbutuem.github.io/slotMachine
+- Game -> https://cbutuem.github.io/slotMachine
 - Slides -> https://docs.google.com/presentation/d/1C_pD-AiwjaZmwjq1zxsOgFuifxxv-vQcuBu4quum4VM/edit?usp=sharing
 
 
