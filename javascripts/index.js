@@ -177,7 +177,7 @@ function generateRandomColor() {
   
 btnRightElement.addEventListener('click', () => {
     if (btnRightElement.innerText === 'SPIN' && din > 0){
-        setTimeout(play, 6000);
+        setTimeout(play, 3000);
         setInterval(changeColor, 200);
        
     }
