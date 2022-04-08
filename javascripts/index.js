@@ -181,12 +181,13 @@ btnRightElement.addEventListener('click', () => {
     if (btnRightElement.innerText === 'SPIN' && din > 0){
         setTimeout(play, 2000);
         setInterval(changeColor, 200);
+
     }
     else{
         din = 0;
         newGame();
     }
-    winLose('din');
+   
 });
 
 function winLose(a){
@@ -206,14 +207,7 @@ function winLose(a){
             $('pop').hide(popUP.innerHTML = ""); // "foo" é o id do elemento que seja manipular.
         }, 3000);
     }
-    if ('din'){
-        setTimeout(function () {
-            $('pop').hide(popUP.innerHTML = "B**** better have my money!"); // "foo" é o id do elemento que seja manipular.
-        }, 1000);
-        setTimeout(function () {
-            $('pop').hide(popUP.innerHTML = ""); // "foo" é o id do elemento que seja manipular.
-        }, 3000);
-    }
+    
 };
 
 $().ready( function() {
@@ -221,7 +215,7 @@ $().ready( function() {
 		$('pop').hide(popUP.innerHTML = "You won a $10 coupon!"); 
 	}, 1000);
     setTimeout(function () {
-		$('pop').hide(popUP.innerHTML = "You won a $10 coupon!"); 
+		$('pop').hide(popUP.innerHTML = ""); 
 	}, 3000);
 });
 
